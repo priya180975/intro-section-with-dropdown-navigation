@@ -8,6 +8,7 @@
   
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
   <link rel="stylesheet" href="style.css">
+  
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -28,23 +29,40 @@
       <img class="header__logo" src="./images/logo.svg" alt="snap-logo" />
       <div class="header__menu">
         <button class="menu__button"><img src="./images/icon-menu.svg" alt="menu-icon"/></button>
+        
         <div class="menu__items">
           <button class="menu__cancel"><img src="./images/icon-close-menu.svg" alt="menu-close"/></button>
+          
           <div class="menu__items_multiple">
             <div class="menu__feature">
-              <button class="feature__button closed btn">Features<img src="./images/icon-arrow-down.svg" alt="icon-arrow-down"></button>
+              <button class="feature__button btn">Features<img src="./images/icon-arrow-down.svg" alt="icon-arrow-down"></button>
+              <div class="menu__feature__items">
+                <a href="#"><img src="./images/icon-todo.svg" alt="icon-todo"/>Todo List</a>  
+                <a href="#"><img src="./images/icon-calendar.svg" alt="icon-calendar"/>Calendar</a>  
+                <a href="#"><img src="./images/icon-reminders.svg" alt="icon-reminders">Reminders</a>
+                <a href="#"><img src="./images/icon-planning.svg" alt="icon-planning">Planning</a>
+              </div>
             </div>
+            
             <div class="menu__company">
-              <button class="company__button closed btn">Company<img src="./images/icon-arrow-down.svg" alt="icon-arrow-down"></button>
+              <button class="company__button btn">Company<img src="./images/icon-arrow-down.svg" alt="icon-arrow-down"></button>
+              <div class="menu__company__items">
+                <a href="#">History</a>
+                <a href="#">Our Team</a>
+                <a href="#">Blog  </a>
+              </div>
             </div>
-            <div><button class="btn">Careers</button></div>
-            <div><button class="btn">About</button></div>
+            
+            <div><button class="btn menu__careers">Careers</button></div>
+            <div><button class="btn menu__about">About</button></div>
           </div>
+          
           <div class="menu__items_signup">
             <a href="#">Login</a>
             <a href="#">Register</a>
           </div>
         </div>
+      
       </div>
     </header>
 
@@ -79,5 +97,6 @@
       Coded by <a href="#">Priya Nayak</a>.
     </div>
   </div>
+  <script src="script.js"></script>
 </body>
 </html>

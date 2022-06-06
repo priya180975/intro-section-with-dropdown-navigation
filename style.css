@@ -14,6 +14,7 @@
 }
 
 .overlay{
+    display: none;
     position:absolute;
     height:100%;
     width:100%;
@@ -30,6 +31,7 @@ header{
     border: none;
     background: none;
     outline: none;
+    cursor: pointer;
 }
 
 .menu__items{
@@ -41,6 +43,7 @@ header{
     width: 65%;
     padding: 1rem;
     background: #fff;
+    display: none;
 }
 
 .menu__cancel{
@@ -49,6 +52,11 @@ header{
     border: none;
     outline: none;
     color: var(--almostBlack);
+    cursor: pointer;
+}
+
+.opened img{
+    content: url(./images/icon-arrow-up.svg);
 }
 
 .menu__items_multiple{
@@ -63,6 +71,30 @@ header{
     display: flex;
     align-items: center;
     gap: 0.4rem;
+    cursor: pointer;
+}
+
+.menu__feature__items,.menu__company__items{
+    display: none;
+}
+
+.menu__submenu{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem !important;
+}
+
+.menu__submenu a{
+    display: flex;
+    align-items: center;
+    gap:1rem;
+    padding: 0.5rem 0;
+    text-decoration: none;
+    color: var(--mediumGray);
+}
+
+.menu__about{
+    cursor: pointer;
 }
 
 .btn{
@@ -80,7 +112,6 @@ header{
 }
 
 .menu__items_signup a{
-    font-size: 0.9rem;
     text-decoration: none;
     color: var(--mediumGray);
     padding: 0.7rem 0.5rem;
@@ -89,15 +120,9 @@ header{
 }
 
 
-.menu__items_signup a:hover{
+.menu__items_signup a:nth-child(2){
     border: 2px solid var(--mediumGray);
 }
-
-
-
-
-
-
 
 .hero__img{
     width: 100%;
@@ -128,8 +153,16 @@ header{
     font-size: 1rem;
 }
 
+.content_learnmore:hover{
+    background: none;
+    border:1px solid var(--almostBlack);
+    color: var(--almostBlack);
+    font-weight: 700;
+    cursor: pointer;
+}
+
 .content_client{
-    padding: 3rem 0;
+    padding: 2rem 0 1rem 0;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     justify-content: space-between;
