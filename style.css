@@ -121,7 +121,7 @@ header{
 
 
 .menu__items_signup a:nth-child(2){
-    border: 2px solid var(--mediumGray);
+    border: 3px solid var(--mediumGray);
 }
 
 .hero__img{
@@ -175,4 +175,124 @@ header{
 
 .content_client img:nth-child(2){
     width: 55px;
+}
+
+@media(min-width:800px)
+{
+    body{
+        background: var(--almostWhite);
+    }
+
+    header{
+        padding: 1.5rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .header__menu{
+        width: 90%;
+    }
+
+    .menu__button,.menu__cancel{
+        display: none;
+    }
+
+    .menu__items{
+        display: flex;
+        background: var(--almostWhite);
+        position: relative;
+        height: auto;
+        width: auto;
+        align-items: baseline;
+        padding: 0;
+        justify-content: space-between;
+        font-size: 0.9rem;
+    }
+
+    .btn{
+        font-size: 0.9rem;
+    }
+
+    .btn:hover{
+        color: var(--almostBlack);
+    }
+
+    .menu__items_multiple{
+        display: flex;
+        padding: 0;
+    }
+
+    .menu__items_multiple div{
+        margin-right: 2.5rem;
+    }
+
+    .menu__feature__items{
+        position: absolute;
+        margin-top: 1.5rem;
+        left: -4rem;
+        background: #fff;
+        border-radius: 1rem;
+        box-shadow: 0rem 0rem 2rem 0rem #69696969;
+    }
+
+    .menu__company__items{
+        position: absolute;   
+        margin-top: 1.5rem;
+        background: #fff;
+        border-radius: 1rem;
+        box-shadow: 0rem 0rem 2rem 0rem #69696969;
+    }
+
+    .menu__submenu{
+        padding: 1.5rem 2rem  !important;
+    }
+
+    .menu__items_signup{
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+    .menu__items_signup a:hover{
+        color: var(--almostBlack);
+    }
+
+    .menu__items_signup a:nth-child(2){
+        padding: 0.8rem 1.2rem;
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: 70% 30%;
+        padding: 0 7rem;
+        align-items: center;
+    }
+
+    .hero{
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .hero__img{
+        content: url(./images/image-hero-desktop.png);
+        float: right;
+    }
+
+    .content{
+        text-align:justify;
+        padding: 10rem 1rem 0;
+    }
+
+    .content h2{
+        font-size: 5rem;
+    }
+
+    .content h2 span::before{
+        content: "\a";
+        white-space: pre;
+    }
+
+    .content p{
+        margin: 1.5rem 0;
+        width: 65%;
+    }
 }
