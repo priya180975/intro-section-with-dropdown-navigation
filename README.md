@@ -1,6 +1,6 @@
 # Frontend Mentor - Intro section with dropdown navigation solution
 
-This is a solution to the [Intro section with dropdown navigation challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/intro-section-with-dropdown-navigation-ryaPetHE5).
+This is a solution to the [Intro section with dropdown navigation challenge on Frontend Mentor](https://www.frontendmentor.io/solutions/responsive-intro-section-using-css-grid-and-flexbox-SYyTjUx96Z).
 
 
 ![Design preview for the Intro section with dropdown navigation challenge ](./images/desktop-design.jpg)
