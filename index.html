@@ -15,54 +15,69 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
+
 <body>
 
-  <header>
-    <img class="header__logo" src="./images/logo.svg" alt="snap-logo" />
-    <div class="header__menu">
-      <button class="menu__button"><img src="./images/icon-menu.svg" alt="menu-icon"/></button>
-      <div class="menu__items">
 
+
+  <div class="overlay"></div>
+
+
+  <div class="container">
+    <header>
+      <img class="header__logo" src="./images/logo.svg" alt="snap-logo" />
+      <div class="header__menu">
+        <button class="menu__button"><img src="./images/icon-menu.svg" alt="menu-icon"/></button>
+        <div class="menu__items">
+          <button class="menu__cancel"><img src="./images/icon-close-menu.svg" alt="menu-close"/></button>
+          <div class="menu__items_multiple">
+            <div class="menu__feature">
+              <button class="feature__button closed btn">Features<img src="./images/icon-arrow-down.svg" alt="icon-arrow-down"></button>
+            </div>
+            <div class="menu__company">
+              <button class="company__button closed btn">Company<img src="./images/icon-arrow-down.svg" alt="icon-arrow-down"></button>
+            </div>
+            <div><button class="btn">Careers</button></div>
+            <div><button class="btn">About</button></div>
+          </div>
+          <div class="menu__items_signup">
+            <a href="#">Login</a>
+            <a href="#">Register</a>
+          </div>
+        </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <main>
-    <div class="hero">
-      <img class="hero__img" src="./images/image-hero-mobile.png" alt="hero-image"/>
-    </div>
-    <div class="content">
-      <h2>Make remote work</h2>
-      <p>Get your team in sync, no matter your location. Streamline processes, 
-        create team rituals, and watch productivity soar.</p>
-      <button class="content_learnmore">Learn more</button>
-      <div class="content_client">
-        <img src="./images/client-databiz.svg" alt="client-databiz"/>
-        <img src="./images/client-audiophile.svg" alt="client-audiophile"/>
-        <img src="./images/client-meet.svg" alt="client-meet"/>
-        <img src="./images/client-maker.svg" alt="client-maker"/>
+    <main>
+      <div class="hero">
+        <img class="hero__img" src="./images/image-hero-mobile.png" alt="hero-image"/>
       </div>
+      <div class="content">
+        <h2>Make remote work</h2>
+        <p>Get your team in sync, no matter your location. Streamline processes, 
+          create team rituals, and watch productivity soar.</p>
+        <button class="content_learnmore">Learn more</button>
+        <div class="content_client">
+          <img src="./images/client-databiz.svg" alt="client-databiz"/>
+          <img src="./images/client-audiophile.svg" alt="client-audiophile"/>
+          <img src="./images/client-meet.svg" alt="client-meet"/>
+          <img src="./images/client-maker.svg" alt="client-maker"/>
+        </div>
+      </div>
+    </main>
+
+
+
+    
+
+    
+
+    
+    
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Priya Nayak</a>.
     </div>
-  </main>
-
-<!-- 
-  Features
-  Company
-  Careers
-  About
-
-  Login
-  Register -->
-
-  
-
-  
-
-  
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Priya Nayak</a>.
   </div>
 </body>
 </html>
