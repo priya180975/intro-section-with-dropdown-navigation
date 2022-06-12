@@ -13,12 +13,21 @@
     box-sizing: border-box;
 }
 
+body{
+    display: flex;
+    justify-content: center;
+}
+
 .overlay{
     display: none;
     position:absolute;
     height:100%;
     width:100%;
     background-color:rgba(0,0,0,0.7);
+}
+
+.container{
+    max-width: 1500px;
 }
 
 header{
@@ -262,28 +271,29 @@ header{
 
     main{
         display: grid;
-        grid-template-columns: 70% 30%;
-        padding: 0 7rem;
-        align-items: center;
+        grid-template-columns: 60% 40%;
+        padding: 3rem 7rem;
+        align-items: end;
     }
 
     .hero{
         grid-column: 2;
         grid-row: 1;
+        margin: 0 auto;
     }
 
     .hero__img{
         content: url(./images/image-hero-desktop.png);
-        float: right;
+        max-width: 400px;
     }
 
     .content{
         text-align:justify;
-        padding: 10rem 1rem 0;
+        padding: 0rem 1rem 0;
     }
 
     .content h2{
-        font-size: 5rem;
+        font-size: 4rem;
     }
 
     .content h2 span::before{
@@ -294,5 +304,6 @@ header{
     .content p{
         margin: 1.5rem 0;
         width: 65%;
+        max-width: 600px;
     }
 }

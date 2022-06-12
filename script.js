@@ -12,6 +12,7 @@ let companySubmenuButton=document.querySelector(".company__button")
 let featureSubmenuItems=document.querySelector(".menu__feature__items")
 let companySubmenuItems=document.querySelector(".menu__company__items")
 
+let menuSubItems=document.querySelectorAll(".menu__items__select")
 
 
 
@@ -20,6 +21,13 @@ mainMenuCloseButton.addEventListener("click",closeMainMenu)
 
 featureSubmenuButton.addEventListener("click",featureSubmenu)
 companySubmenuButton.addEventListener("click",companySubmenu)
+
+menuSubItems.forEach(a=>{
+    if(window.outerWidth<800)
+    {
+        a.addEventListener("click",closeMainMenu)
+    }
+    })
 
 function openMainMenu(){
     mainMenuItems.style.display="block"
